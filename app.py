@@ -4,8 +4,9 @@ from bs4 import BeautifulSoup
 import json
 
 # Sifu, আপনার token এবং chat ID সরাসরি বসানো হলো
-BOT_TOKEN = "8030080377:AAF4njkWZI_DbtdQJlTRPVTK2XsaaLOZ0bM"
-CHAT_ID = "1282893152"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 URL = "https://kmu.ac.bd/frontNotice"
 
 app = Flask(__name__)
